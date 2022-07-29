@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_13sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_13sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:background="@drawable/constraint_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="84dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="253dp" />
+
+    <TextView
+        android:id="@+id/tvTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/ecal"
+        android:text="Bangladesh"
+        android:textColor="#CFD1D3"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivTeam1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivTeam2"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_center"
+        app:srcCompat="@drawable/crexlogo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/ecal"
+        android:text="25th T20 at Sharjah International Ground"
+        android:textColor="#9FA3A7"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivTeam1"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/crexlogo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/ecal"
+        android:text="Sri Lanka"
+        android:textColor="#CFD1D3"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivTeam1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_gravity="center_vertical"
+        android:background="#24303D"
+        app:layout_constraintBottom_toBottomOf="@id/ivTeam2"
+        app:layout_constraintStart_toEndOf="@id/vertical_center"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="7:30 PM"
+        android:textColor="#CFD1D3"
+        android:textSize="@dimen/_9sdp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view" />
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="5 June"
+        android:textColor="#9FA3A7"
+        android:textSize="@dimen/_13sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_center"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="#24303D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTeam2"/>
+
+    <TextView
+        android:id="@+id/tvRateTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/tv_corner_radius"
+        android:backgroundTint="#252F72"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:text="DC"
+        android:textColor="#FCFCFC"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvRate1"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvRate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:background="@drawable/tv_corner_radius"
+        android:backgroundTint="#005E9A"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:text="98"
+        android:textColor="#FCFCFC"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toStartOf="@id/tvRate2"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvRate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/tv_corner_radius"
+        android:backgroundTint="#A64040"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:text="99"
+        android:textColor="#FCFCFC"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

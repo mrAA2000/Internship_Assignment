@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1085688539611",
+    "firebase_url": "https://android-onboarding-parth-default-rtdb.firebaseio.com",
+    "project_id": "android-onboarding-parth",
+    "storage_bucket": "android-onboarding-parth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085688539611:android:4f0ed796bf16427b8c5ffe",
+        "android_client_info": {
+          "package_name": "com.example.parthinterntask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085688539611-kkid9rsf15q4uijim37ees72osv356l2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parthinterntask",
+            "certificate_hash": "1b0713fd2e962adcecc9116420fefaf9d79d6ae6"
+          }
+        },
+        {
+          "client_id": "1085688539611-537pvnk3plivi1jss0j5jbtpa7hguu4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDDLtfo2iAz44YAXtWAKwD6VPaYcF1IM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085688539611-537pvnk3plivi1jss0j5jbtpa7hguu4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
